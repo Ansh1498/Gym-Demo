@@ -1,0 +1,9 @@
+import { cn } from "@/lib/cn";
+
+export default function Container({ className, children }) {
+  return (
+    <div className={cn("mx-auto w-full max-w-6xl px-5", className)}>
+      {children}
+    </div>
+  );
+}
